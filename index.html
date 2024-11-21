@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Intro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro">
+    <div class="circle"></div> <!-- Overlay Circle -->
+    <div class="content">
+      <div class="logo">&#10003;</div> <!-- Checkmark -->
+      <p class="subtitle">Your Phone Safe Today Start</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<style> 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Main Intro Section */
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* Circle Overlay */
+.circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #4CAF50; /* Green color */
+  border-radius: 50%;
+  animation: expandCircle 3s ease-in-out forwards;
+  z-index: 2;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
+  animation: fadeIn 3s 2.5s ease-in-out forwards;
+}
+
+.logo {
+  font-size: 100px;
+  color: #4CAF50;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Circle Animation */
+@keyframes expandCircle {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(30);
+    opacity: 0;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  <!--Tab to edit-->
+</style>
+<script>
+// Optional: Log the event or add interactivity.
+console.log("Animated Web Intro Loaded!");
+  <!--Tab to edit-->
+        </script>
